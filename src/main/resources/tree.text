@@ -1,0 +1,34 @@
+
+ ├── Library
+ │    └── DataBase
+ │        ├── Main.java
+ │        ├── controllers.java
+ │        │
+ │        ├── DataBase
+ │        │   ├── SqlConnection.java
+ │        │   ├── HomeDataBase.java
+ │        │   ├── BookDataBase.java
+ │        │   ├── StudentDataBase.java
+ │        │   └── BorrowDataBase.java
+ │        └── Manager
+ │            ├── Books.java
+ │            ├── BRBooks.java
+ │            └── Student.java
+ └──resources/
+      ├── ICON/
+      └── Student.java
+
+
+├───.idea
+│   ├───inspectionProfiles
+│   └───libraries
+├───src
+│   ├───main
+│   │   ├───java
+│   │   │   └───Library
+│   │   │       ├───DataBase
+│   │   │       └───Manager
+│   │   └───resources
+│   │       └───ICON
+│   └───test
+│       └───java
