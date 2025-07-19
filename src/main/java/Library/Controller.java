@@ -281,6 +281,7 @@ public class Controller implements Initializable {
                     StudentDataBase.DeleteStudent(StdID);
                     //for update the table
                     StudentList.setAll(StudentDataBase.loadStudents());
+                    LoanList.setAll(LoanDataBase.loadBorrow());
                     HomePage();
                 }
             } catch (Exception ex) {
@@ -424,6 +425,7 @@ public class Controller implements Initializable {
                 if (result.isPresent() && result.get() == ButtonType.OK) {
                     BookDataBase.DeleteBook(bookId);
                     BooktList.setAll(BookDataBase.loadBook());
+                    LoanList.setAll(LoanDataBase.loadBorrow());
                     HomePage();
                 }
             } catch (Exception ex) {
@@ -457,10 +459,9 @@ public class Controller implements Initializable {
                 int loanId = Integer.parseInt(borrowid.getText());
                 String studentId = StudentCmb.getValue().getID();
                 int bookId = BookCmb.getValue().getCBook();
-
                 LoanDataBase.AddBorrow(loanId, studentId, bookId);
-
                 LoanList.setAll(LoanDataBase.loadBorrow());
+                BooktList.setAll(BookDataBase.loadBook());
                 HomePage();
             } catch (Exception ex) {
                 showAlert("Please fill all fields correctly for borrowing.");
@@ -470,10 +471,9 @@ public class Controller implements Initializable {
         else if (e.getSource() == ReturnBtn) {
             try {
                 int loanId = Integer.parseInt(borrowid.getText());
-
                 LoanDataBase.AddReturn(loanId);
-
                 LoanList.setAll(LoanDataBase.loadBorrow());
+                BooktList.setAll(BookDataBase.loadBook());
                 HomePage();
             } catch (Exception ex) {
                 showAlert("Please enter a valid Loan ID to return.");
@@ -500,6 +500,7 @@ public class Controller implements Initializable {
                 if (result.isPresent() && result.get() == ButtonType.OK) {
                     LoanDataBase.DeleteLoan(loanId);
                     LoanList.setAll(LoanDataBase.loadBorrow());
+                    BooktList.setAll(BookDataBase.loadBook());
                     HomePage();
                 }
             } catch (Exception ex) {

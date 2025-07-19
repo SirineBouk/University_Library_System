@@ -99,8 +99,8 @@ public class BookDataBase {
 
     public static void DeleteBook(int CBook){
         connection = SqlConnection.getConnection();
-        String sql3 ="DELETE FROM Loan WHERE book_id ="+CBook+" ";
         String sql4 = "Delete from Book where BOOK_ID = "+CBook+" " ;
+        String sql3 ="DELETE FROM Loan WHERE book_id ="+CBook+" ";
         try {
             statement = connection.createStatement();
             statement.executeUpdate(sql3);

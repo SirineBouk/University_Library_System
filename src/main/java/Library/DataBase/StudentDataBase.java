@@ -94,8 +94,8 @@ public class StudentDataBase {
 
     public static void DeleteStudent(String StdID){
         connection = SqlConnection.getConnection();
-        String sql1 = "DELETE FROM Loan WHERE student_id ='"+StdID+"'" ;
         String sql2 = "Delete from student where STUDENT_ID = '"+StdID+"'" ;
+        String sql1 = "DELETE FROM Loan WHERE student_id ='"+StdID+"'" ;
         try {
             statement = connection.createStatement();
             statement.executeUpdate(sql1);

@@ -16,12 +16,12 @@ public class LoanDataBase {
         Connection connection = SqlConnection.getConnection();
         String sql5 = "INSERT INTO Loan (loan_id, student_id, book_id) VALUES (" +
                 loanId + ", '" + studentId + "', " + bookId + ")";
-
+        String sql = "update Book set stock = stock -1 where book_id = "+bookId+" " ;
 
         try {
             statement = connection.createStatement();
             statement.execute(sql5);
-
+            statement.execute(sql);
         } catch (SQLException ev) {
             throw new RuntimeException(ev);
         }
@@ -55,15 +55,30 @@ public class LoanDataBase {
 
     public static void AddReturn(int loanId) {
         Connection connection = SqlConnection.getConnection();
-        String sql = "UPDATE Loan SET return_date = SYSDATE, status = 'Returned' WHERE loan_id = " + loanId;
 
         try {
             Statement statement = connection.createStatement();
-            statement.execute(sql);
+
+            String getBookIdSql = "SELECT book_id FROM Loan WHERE loan_id = " + loanId;
+            ResultSet resultSet = statement.executeQuery(getBookIdSql);
+
+            if (resultSet.next()) {
+                int bookId = resultSet.getInt("book_id");
+
+                String updateLoanSql = "UPDATE Loan SET return_date = SYSDATE, status = 'Returned' WHERE loan_id = " + loanId;
+                statement.executeUpdate(updateLoanSql);
+
+                String updateBookSql = "UPDATE Book SET stock = stock + 1 WHERE book_id = " + bookId;
+                statement.executeUpdate(updateBookSql);
+            } else {
+                System.out.println("Loan with ID " + loanId + " not found.");
+            }
+
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
     }
+
 
     public static void updateOverdueLoans() {
         Connection connection = SqlConnection.getConnection();
@@ -82,10 +97,27 @@ public class LoanDataBase {
 
     public static void DeleteLoan(int LoanID){
         Connection connection = SqlConnection.getConnection();
-        String sql = "DELETE FROM Loan WHERE loan_id ='"+LoanID+"'" ;
+
         try {
-            statement = connection.createStatement();
-            statement.executeUpdate(sql);
+            Statement statement = connection.createStatement();
+
+            String getLoanInfoSql = "SELECT book_id, status FROM Loan WHERE loan_id = " + LoanID;
+            ResultSet resultSet = statement.executeQuery(getLoanInfoSql);
+
+            if (resultSet.next()) {
+                int bookId = resultSet.getInt("book_id");
+                String status = resultSet.getString("status");
+
+                if (!status.equalsIgnoreCase("Returned")) {
+                    String updateBookSql = "UPDATE Book SET stock = stock + 1 WHERE book_id = " + bookId;
+                    statement.executeUpdate(updateBookSql);
+                }
+
+                String deleteLoanSql = "DELETE FROM Loan WHERE loan_id = " + LoanID;
+                statement.executeUpdate(deleteLoanSql);
+            } else {
+                System.out.println("Loan with ID " + LoanID + " not found.");
+            }
 
         } catch (SQLException ev) {
             throw new RuntimeException(ev);
