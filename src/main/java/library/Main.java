@@ -1,4 +1,4 @@
-package Library;
+package library;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -16,10 +16,10 @@ public class Main extends Application {
 
         try {
 
-            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/LibraryApp.fxml")));
+            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/LibraryApp.fxml")));
             Scene scene = new Scene(root);
             primaryStage.setTitle("University Library Loan Management");
-            Image icon = new Image("ICON/Logo.png");
+            Image icon = new Image("icon/Logo.png");
             primaryStage.getIcons().add(icon) ;
 
             primaryStage.setScene(scene);

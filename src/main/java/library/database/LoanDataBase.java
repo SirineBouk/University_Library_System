@@ -1,6 +1,6 @@
-package Library.DataBase;
+package library.database;
 
-import Library.Manager.Loan;
+import library.model.Loan;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 

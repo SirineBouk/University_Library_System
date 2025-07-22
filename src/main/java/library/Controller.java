@@ -1,9 +1,9 @@
-package Library;
+package library;
 
-import Library.DataBase.*;
-import Library.Manager.Loan;
-import Library.Manager.Books;
-import Library.Manager.Student;
+import library.database.*;
+import library.model.Loan;
+import library.model.Books;
+import library.model.Student;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
@@ -86,11 +86,11 @@ public class Controller implements Initializable {
     @FXML
     private TableColumn<Loan, Integer> colb,colbk;
 
-    private ObservableList<Student> StudentList = FXCollections.observableArrayList();
+    private final ObservableList<Student> StudentList = FXCollections.observableArrayList();
 
-    private ObservableList<Books> BooktList = FXCollections.observableArrayList();
+    private final ObservableList<Books> BooktList = FXCollections.observableArrayList();
 
-    private ObservableList<Loan> LoanList = FXCollections.observableArrayList();
+    private final ObservableList<Loan> LoanList = FXCollections.observableArrayList();
 
     public void SwitchPg(ActionEvent event) {
         if (event.getSource() == HomeBtn) {
@@ -146,11 +146,9 @@ public class Controller implements Initializable {
         initializeBook() ;
         initializeLoan() ;
         HomePage();
-
     }
 
     public  void initializeStudent(){
-        /// For Student Page
         //for display the column
         IDCln.setCellValueFactory(new PropertyValueFactory<>("ID"));
         FNameCln.setCellValueFactory(new PropertyValueFactory<>("Fname"));
@@ -160,7 +158,7 @@ public class Controller implements Initializable {
 
         StudentList.setAll(StudentDataBase.loadStudents());
 
-        //for search in student management
+        //for search
         FilteredList<Student> filter = new FilteredList<>(StudentList, en -> true);
 
         SearchStd.textProperty().addListener((Observable, oldValue, newValue) -> {
@@ -178,8 +176,6 @@ public class Controller implements Initializable {
                 } else if (student.getFname().toLowerCase().contains(searchKey)) {
                     return true;
                 } else if (student.getLname().toLowerCase().contains(searchKey)) {
-                    return true;
-                } else if (student.getEmail().toLowerCase().contains(searchKey)) {
                     return true;
                 } else if (String.valueOf(student.getPhone()).contains(searchKey)) {
                     return true;
@@ -201,8 +197,7 @@ public class Controller implements Initializable {
                 if (empty || student == null) {
                     setText(null);
                 } else {
-                    //+ " " +student.getFname() + " " + student.getLname()//
-                    setText(student.getID());  // Display student's full name
+                    setText(student.getID());
                 }
             }
         });
@@ -292,7 +287,6 @@ public class Controller implements Initializable {
     }
 
     public  void initializeBook(){
-        /// For book Page
         //for display the column
         BookIDCln.setCellValueFactory(new PropertyValueFactory<>("CBook"));
         TitleCln.setCellValueFactory(new PropertyValueFactory<>("title"));
@@ -303,7 +297,7 @@ public class Controller implements Initializable {
 
         BooktList.setAll(BookDataBase.loadBook());
 
-        //for search in student management
+        //for search
         FilteredList<Books> filter1 = new FilteredList<>(BooktList, en -> true);
 
         SearchBook.textProperty().addListener((Observable, oldValue, newValue) -> {
@@ -346,8 +340,7 @@ public class Controller implements Initializable {
                 if (empty || books == null) {
                     setText(null);
                 } else {
-                    //+ " " +student.getFname() + " " + student.getLname()//
-                    setText(String.valueOf(books.getCBook()));  // Display student's full name
+                    setText(String.valueOf(books.getCBook()));
                 }
             }
         });
@@ -512,7 +505,6 @@ public class Controller implements Initializable {
 
     public void initializeLoan() {
         LoanDataBase.updateOverdueLoans();
-
         // Column bindings
         colb.setCellValueFactory(new PropertyValueFactory<>("loanId"));
         cols.setCellValueFactory(new PropertyValueFactory<>("studentId"));
@@ -521,10 +513,8 @@ public class Controller implements Initializable {
         coldd.setCellValueFactory(new PropertyValueFactory<>("dueDate"));
         colrd.setCellValueFactory(new PropertyValueFactory<>("returnDate"));
         colst.setCellValueFactory(new PropertyValueFactory<>("status"));
-
         // Load data
         LoanList.setAll(LoanDataBase.loadBorrow());
-
         // Filtered list
         FilteredList<Loan> filteredList = new FilteredList<>(LoanList, loan -> true);
 
@@ -543,10 +533,8 @@ public class Controller implements Initializable {
                         || loan.getStatus().toLowerCase().contains(search);
             });
         });
-
         SortedList<Loan> sortedList = new SortedList<>(filteredList);
         sortedList.comparatorProperty().bind(LoanTab.comparatorProperty());
-
         LoanTab.setItems(sortedList);
     }
 

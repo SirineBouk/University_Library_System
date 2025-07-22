@@ -51,27 +51,27 @@
                                  </font></Button>
                               <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="14.0" layoutY="249.0">
                                  <image>
-                                    <Image url="@icon/icons8-home-page-100.png" />
+                                    <Image url="@../icon/icons8-home-page-100.png" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="14.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@icon/icons8-books.png" />
+                                    <Image url="@../icon/icons8-books.png" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="14.0" layoutY="344.0">
                                  <image>
-                                    <Image url="@icon/icons8-student-registration.png" />
+                                    <Image url="@../icon/icons8-student-registration.png" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="14.0" layoutY="393.0">
                                  <image>
-                                    <Image url="@icon/icons8-rollback-100.png" />
+                                    <Image url="@../icon/icons8-rollback-100.png" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="149.0" fitWidth="158.0" layoutX="45.0">
                                  <image>
-                                    <Image url="@icon/Appicon.png" />
+                                    <Image url="@../icon/Appicon.png" />
                                  </image>
                               </ImageView>
                            </children>
@@ -82,10 +82,10 @@
                <center>
                   <AnchorPane prefHeight="631.0" prefWidth="1069.0" style="-fx-background-color: #f6f2e0;" BorderPane.alignment="CENTER">
                      <children>
-                        <AnchorPane fx:id="HomePg" layoutX="13.0" layoutY="13.0" prefHeight="630.0" prefWidth="1000.0" style="-fx-border-radius: 15; -fx-border-color: #000000; -fx-border-width: 1; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 8, 0, 4, 4);">
+                        <AnchorPane fx:id="HomePg" layoutX="13.0" layoutY="13.0" prefHeight="630.0" prefWidth="1000.0" style="-fx-border-radius: 15; -fx-border-color: #000000; -fx-border-width: 1; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 8, 0, 2, 2);">
                            <children>
                               <Line endX="941.6666870117188" endY="71.95955657958984" layoutX="-1.0" layoutY="15.0" startX="33.0000114440918" startY="71.95955657958984" />
-                              <Label alignment="TOP_CENTER" layoutX="4.0" layoutY="40.0" prefHeight="45.0" prefWidth="935.0" style="-fx-effect: null;" text="University Library Loan Management">
+                              <Label alignment="TOP_CENTER" layoutX="4.0" layoutY="40.0" prefHeight="45.0" prefWidth="935.0" style="-fx-effect: null;" text="University library Loan Management">
                                  <font>
                                     <Font name="Gabriola" size="36.0" />
                                  </font>
@@ -101,10 +101,10 @@
                                           </Label>
                                           <ImageView fitHeight="119.0" fitWidth="123.0" layoutX="14.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@icon/icons8-rollback.png" />
+                                                <Image url="@../icon/icons8-rollback.png" />
                                              </image>
                                           </ImageView>
-                                          <Label alignment="TOP_CENTER" layoutX="96.0" layoutY="152.0" prefHeight="40.0" prefWidth="260.0" text="Total Unreturned Books" textAlignment="CENTER" textFill="#1b1a1a" wrapText="true">
+                                          <Label alignment="TOP_CENTER" layoutX="96.0" layoutY="152.0" prefHeight="46.0" prefWidth="260.0" text="Total Unreturned Books" textAlignment="CENTER" textFill="#1b1a1a" wrapText="true">
                                              <font>
                                                 <Font name="Roboto Black" size="24.0" />
                                              </font>
@@ -113,7 +113,7 @@
                                     </AnchorPane>
                                     <AnchorPane layoutX="472.0" layoutY="26.0" prefHeight="220.0" prefWidth="370.0" style="-fx-background-color: linear-gradient(to bottom, #F5B8DB, #c07095); -fx-background-radius: 15;">
                                        <children>
-                                          <Label alignment="TOP_CENTER" layoutX="79.0" layoutY="163.0" prefHeight="40.0" prefWidth="260.0" text="Total Enrolled Students" textFill="#0b0b0b">
+                                          <Label alignment="TOP_CENTER" layoutX="79.0" layoutY="163.0" prefHeight="35.0" prefWidth="260.0" text="Total Enrolled Students" textFill="#0b0b0b">
                                              <font>
                                                 <Font name="Roboto Black" size="24.0" />
                                              </font>
@@ -123,16 +123,16 @@
                                                 <Font name="System Bold Italic" size="43.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                                          <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="14.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@icon/icons8-student-registration-100.png" />
+                                                <Image url="@../icon/icons8-student-registration-100.png" />
                                              </image>
                                           </ImageView>
                                        </children>
                                     </AnchorPane>
                                     <AnchorPane layoutX="86.0" layoutY="26.0" prefHeight="220.0" prefWidth="370.0" style="-fx-background-color: linear-gradient(to bottom, #F5D867, #a68b1b);; -fx-background-radius: 15;">
                                        <children>
-                                          <Label alignment="TOP_CENTER" layoutX="88.0" layoutY="163.0" prefHeight="40.0" prefWidth="260.0" text="Total Number of Books" textFill="#1b1a1a">
+                                          <Label alignment="TOP_CENTER" layoutX="88.0" layoutY="166.0" prefHeight="40.0" prefWidth="260.0" text="Total Number of Books" textFill="#1b1a1a">
                                              <font>
                                                 <Font name="Roboto Black" size="24.0" />
                                              </font>
@@ -144,14 +144,14 @@
                                           </Label>
                                           <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="14.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@icon/icons8-books-100.png" />
+                                                <Image url="@../icon/icons8-books-100.png" />
                                              </image>
                                           </ImageView>
                                        </children>
                                     </AnchorPane>
                                     <AnchorPane layoutX="86.0" layoutY="258.0" prefHeight="220.0" prefWidth="370.0" style="-fx-background-color: linear-gradient(to bottom, #9AAB63, #4b5b2e); -fx-background-radius: 15;">
                                        <children>
-                                          <Label alignment="TOP_CENTER" layoutX="79.0" layoutY="152.0" prefHeight="40.0" prefWidth="260.0" text=" Total Borrowed Books" textAlignment="CENTER" textFill="#100f0f" wrapText="true">
+                                          <Label alignment="TOP_CENTER" layoutX="83.0" layoutY="164.0" prefHeight="41.0" prefWidth="269.0" style="visibility: 1;" text=" Total Borrowed Books" textAlignment="CENTER" textFill="#100f0f" wrapText="true">
                                              <font>
                                                 <Font name="Roboto Black" size="24.0" />
                                              </font>
@@ -163,7 +163,7 @@
                                           </Label>
                                           <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="14.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@icon/icons8-return-book-100.png" />
+                                                <Image url="@../icon/icons8-return-book-100.png" />
                                              </image>
                                           </ImageView>
                                        </children>
@@ -172,16 +172,16 @@
                               </AnchorPane>
                            </children>
                         </AnchorPane>
-                        <AnchorPane fx:id="BookPg" layoutX="15.0" layoutY="8.0" prefHeight="630.0" prefWidth="1000.0" style="-fx-border-color: #000000; -fx-border-radius: 15; -fx-border-width: 1; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 8, 0, 4, 4);" visible="false">
+                        <AnchorPane fx:id="BookPg" layoutX="13.0" layoutY="13.0" prefHeight="630.0" prefWidth="1000.0" style="-fx-border-color: #000000; -fx-border-radius: 15; -fx-border-width: 1; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 8, 0, 2, 2);" visible="false">
                            <children>
-                              <TableView fx:id="BookTab" layoutX="22.0" layoutY="69.0" prefHeight="201.0" prefWidth="959.0">
+                              <TableView fx:id="BookTab" layoutX="24.0" layoutY="63.0" prefHeight="237.0" prefWidth="956.0">
                                 <columns>
                                   <TableColumn fx:id="BookIDCln" prefWidth="142.66669082641602" text="Book Code" />
-                                  <TableColumn fx:id="TitleCln" prefWidth="201.33335876464844" text="Title" />
-                                    <TableColumn fx:id="AuthorCln" prefWidth="177.99996948242188" text="Author" />
-                                    <TableColumn fx:id="CategoryCln" prefWidth="158.0" text="Category" />
-                                    <TableColumn fx:id="PYearCln" prefWidth="137.33331298828125" text="Publication_Year" />
-                                    <TableColumn fx:id="QuantityCln" prefWidth="139.3333740234375" text="Available_Quantity" />
+                                  <TableColumn fx:id="TitleCln" prefWidth="205.0" text="Title" />
+                                    <TableColumn fx:id="AuthorCln" prefWidth="175.0" text="Author" />
+                                    <TableColumn fx:id="CategoryCln" prefWidth="200.0" text="Category" />
+                                    <TableColumn fx:id="PYearCln" prefWidth="110.0" text="Publication_Year" />
+                                    <TableColumn fx:id="QuantityCln" prefWidth="120.0" text="Available_Quantity" />
                                 </columns>
                               </TableView>
                               <TextField fx:id="BookID" layoutX="165.0" layoutY="331.0" prefHeight="28.0" prefWidth="251.0" />
@@ -216,18 +216,18 @@
                               <TextField fx:id="SearchBook" layoutX="57.0" layoutY="16.0" prefHeight="34.0" prefWidth="316.0" promptText="Search" />
                               <ImageView fitHeight="35.0" fitWidth="40.0" layoutX="22.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@icon/icons8-search-100.png" />
+                                    <Image url="@../icon/icons8-search-100.png" />
                                  </image>
                               </ImageView>
-                              <Button fx:id="DeleteBook" layoutX="673.0" layoutY="510.0" mnemonicParsing="false" onAction="#BookPage" prefHeight="58.0" prefWidth="114.0" style="-fx-background-color: #B6CAEB; -fx-background-radius: 11;" text="Delete">
+                              <Button fx:id="DeleteBook" layoutX="693.0" layoutY="510.0" mnemonicParsing="false" onAction="#BookPage" prefHeight="58.0" prefWidth="114.0" style="-fx-background-color: #B6CAEB; -fx-background-radius: 11;" text="Delete">
                                  <font>
                                     <Font name="System Bold" size="16.0" />
                                  </font></Button>
-                              <Button fx:id="EditBook" layoutX="518.0" layoutY="510.0" mnemonicParsing="false" onAction="#BookPage" prefHeight="58.0" prefWidth="114.0" style="-fx-background-color: #F5D867; -fx-background-radius: 11;" text="Edit">
+                              <Button fx:id="EditBook" layoutX="524.0" layoutY="510.0" mnemonicParsing="false" onAction="#BookPage" prefHeight="58.0" prefWidth="114.0" style="-fx-background-color: #F5D867; -fx-background-radius: 11;" text="Edit">
                                  <font>
                                     <Font name="System Bold" size="16.0" />
                                  </font></Button>
-                              <Button fx:id="AddBook" layoutX="360.0" layoutY="510.0" mnemonicParsing="false" onAction="#BookPage" prefHeight="58.0" prefWidth="114.0" style="-fx-background-color: #F5B8DB; -fx-background-radius: 11;" text="Add">
+                              <Button fx:id="AddBook" layoutX="361.0" layoutY="510.0" mnemonicParsing="false" onAction="#BookPage" prefHeight="58.0" prefWidth="114.0" style="-fx-background-color: #F5B8DB; -fx-background-radius: 11;" text="Add">
                                  <font>
                                     <Font name="System Bold" size="16.0" />
                                  </font></Button>
@@ -237,14 +237,14 @@
                                  </font>
                               </Label>
                               <TextField fx:id="PYear" layoutX="675.0" layoutY="381.0" prefHeight="28.0" prefWidth="228.0" />
-                              <Button fx:id="ClearBook" layoutX="200.0" layoutY="510.0" mnemonicParsing="false" onAction="#BookPage" prefHeight="58.0" prefWidth="114.0" style="-fx-background-color: #9AAB63; -fx-background-radius: 11;" text="Clear">
+                              <Button fx:id="ClearBook" layoutX="192.0" layoutY="510.0" mnemonicParsing="false" onAction="#BookPage" prefHeight="58.0" prefWidth="114.0" style="-fx-background-color: #9AAB63; -fx-background-radius: 11;" text="Clear">
                                  <font>
                                     <Font name="System Bold" size="16.0" />
                                  </font>
                               </Button>
                            </children>
                         </AnchorPane>
-                        <AnchorPane fx:id="StudentPg" layoutX="15.0" layoutY="13.0" prefHeight="630.0" prefWidth="1000.0" style="-fx-border-color: #000000; -fx-border-radius: 15; -fx-border-width: 1; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 8, 0, 4, 4);" visible="false">
+                        <AnchorPane fx:id="StudentPg" layoutX="13.0" layoutY="13.0" prefHeight="630.0" prefWidth="1000.0" style="-fx-border-color: #000000; -fx-border-radius: 15; -fx-border-width: 1; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 8, 0, 2, 2);" visible="false">
                            <children>
                               <Button fx:id="EditStd" layoutX="524.0" layoutY="510.0" mnemonicParsing="false" onAction="#StudentPage" prefHeight="58.0" prefWidth="114.0" style="-fx-background-color: #F5D867; -fx-background-radius: 11;" text="Edit">
                                  <font>
@@ -270,43 +270,42 @@
                                     <Font name="System Bold" size="16.0" />
                                  </font>
                               </Button>
-                              <TextField fx:id="SearchStd" layoutX="59.0" layoutY="18.0" prefHeight="34.0" prefWidth="325.0" promptText="Search" />
-                              <ImageView fitHeight="31.0" fitWidth="35.0" layoutX="24.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                              <TextField fx:id="SearchStd" layoutX="57.0" layoutY="16.0" prefHeight="34.0" prefWidth="316.0" promptText="Search" />
+                              <ImageView fitHeight="35.0" fitWidth="40.0" layoutX="22.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@icon/icons8-search-100.png" />
+                                    <Image url="@../icon/icons8-search-100.png" />
                                  </image>
                               </ImageView>
-                              <TextField fx:id="StudentID" layoutX="162.0" layoutY="335.0" prefHeight="28.0" prefWidth="256.0" />
-                              <Label layoutX="59.0" layoutY="335.0" prefHeight="28.0" prefWidth="103.0" text="Student ID :">
+                              <TextField fx:id="StudentID" layoutX="172.0" layoutY="335.0" prefHeight="28.0" prefWidth="256.0" />
+                              <Label layoutX="77.0" layoutY="335.0" prefHeight="28.0" prefWidth="93.0" text="Student ID :">
                                  <font>
                                     <Font name="System Bold Italic" size="14.0" />
                                  </font>
                               </Label>
-                              <TextField fx:id="PhoneNbr" layoutX="564.0" layoutY="413.0" prefHeight="28.0" prefWidth="257.0" />
-                              <TextField fx:id="LName" layoutX="162.0" layoutY="441.0" prefHeight="28.0" prefWidth="257.0" />
-                              <TextField fx:id="Email" layoutX="564.0" layoutY="349.0" prefHeight="28.0" prefWidth="257.0" />
-                              <TextField fx:id="FName" layoutX="162.0" layoutY="386.0" prefHeight="28.0" prefWidth="257.0" />
-                              <Label layoutX="508.0" layoutY="413.0" prefHeight="28.0" prefWidth="67.0" text="Phone :">
+                              <TextField fx:id="PhoneNbr" layoutX="587.0" layoutY="413.0" prefHeight="28.0" prefWidth="257.0" />
+                              <TextField fx:id="LName" layoutX="171.0" layoutY="441.0" prefHeight="28.0" prefWidth="257.0" />
+                              <TextField fx:id="Email" layoutX="587.0" layoutY="349.0" prefHeight="28.0" prefWidth="257.0" />
+                              <TextField fx:id="FName" layoutX="171.0" layoutY="386.0" prefHeight="28.0" prefWidth="257.0" />
+                              <Label layoutX="519.0" layoutY="413.0" prefHeight="28.0" prefWidth="67.0" text="Phone :">
                                  <font>
                                     <Font name="System Bold Italic" size="14.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="59.0" layoutY="441.0" prefHeight="28.0" prefWidth="83.0" text="Last Name :">
+                              <Label layoutX="77.0" layoutY="441.0" prefHeight="28.0" prefWidth="94.0" text="Last Name :">
                                  <font>
                                     <Font name="System Bold Italic" size="14.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="508.0" layoutY="349.0" prefHeight="28.0" prefWidth="67.0" text="Email :">
+                              <Label layoutX="519.0" layoutY="349.0" prefHeight="28.0" prefWidth="67.0" text="Email :">
                                  <font>
                                     <Font name="System Bold Italic" size="14.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="59.0" layoutY="386.0" prefHeight="28.0" prefWidth="103.0" text="First Name :">
+                              <Label layoutX="77.0" layoutY="386.0" prefHeight="28.0" prefWidth="94.0" text="First Name :">
                                  <font>
                                     <Font name="System Bold Italic" size="14.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="nodata" layoutX="162.0" layoutY="469.0" prefHeight="28.0" prefWidth="531.0" textFill="#fd0000" />
                               <Button fx:id="ClearStd" layoutX="192.0" layoutY="510.0" mnemonicParsing="false" onAction="#StudentPage" prefHeight="58.0" prefWidth="114.0" style="-fx-background-color: #9AAB63; -fx-background-radius: 11;" text="Clear">
                                  <font>
                                     <Font name="System Bold" size="16.0" />
@@ -314,61 +313,61 @@
                               </Button>
                            </children>
                         </AnchorPane>
-                        <AnchorPane fx:id="LoanPg" layoutX="15.0" layoutY="27.0" prefHeight="630.0" prefWidth="1000.0" style="-fx-border-color: #000000; -fx-border-radius: 15; -fx-border-width: 1; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 8, 0, 4, 4);" visible="false">
+                        <AnchorPane fx:id="LoanPg" layoutX="13.0" layoutY="13.0" prefHeight="630.0" prefWidth="1000.0" style="-fx-border-color: #000000; -fx-border-radius: 15; -fx-border-width: 1; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 8, 0, 2, 2);" visible="false">
                            <children>
-                              <TableView fx:id="LoanTab" layoutX="15.0" layoutY="67.0" prefHeight="210.0" prefWidth="993.0">
+                              <TableView fx:id="LoanTab" layoutX="24.0" layoutY="63.0" prefHeight="237.0" prefWidth="956.0" AnchorPane.bottomAnchor="329.66666666666663" AnchorPane.leftAnchor="22.66666666666663" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="61.99999999999997">
                                 <columns>
-                                  <TableColumn fx:id="colb" prefWidth="132.66666221618652" text="Loan ID" />
-                                  <TableColumn fx:id="cols" prefWidth="163.33335876464844" text="Student ID" />
-                                    <TableColumn fx:id="colbk" prefWidth="152.6666259765625" text="Book Code" />
-                                    <TableColumn fx:id="colbd" prefWidth="142.00003051757812" text="Loan Date" />
-                                    <TableColumn fx:id="coldd" prefWidth="140.6666259765625" text="Due Date" />
-                                    <TableColumn fx:id="colrd" prefWidth="133.33331298828125" text="Return Date" />
-                                    <TableColumn fx:id="colst" prefWidth="134.66668701171875" text="Status" />
+                                  <TableColumn fx:id="colb" prefWidth="138.0" text="Loan ID" />
+                                  <TableColumn fx:id="cols" prefWidth="138.0" text="Student ID" />
+                                    <TableColumn fx:id="colbk" prefWidth="138.0" text="Book Code" />
+                                    <TableColumn fx:id="colbd" prefWidth="135.0" text="Loan Date" />
+                                    <TableColumn fx:id="coldd" prefWidth="135.0" text="Due Date" />
+                                    <TableColumn fx:id="colrd" prefWidth="135.0" text="Return Date" />
+                                    <TableColumn fx:id="colst" prefWidth="134.0" text="Status" />
                                 </columns>
                               </TableView>
-                              <ComboBox fx:id="StudentCmb" layoutX="298.0" layoutY="355.0" prefHeight="25.0" prefWidth="255.0" />
-                              <TextField fx:id="borrowid" layoutX="298.0" layoutY="300.0" prefHeight="25.0" prefWidth="255.0" />
-                              <Label layoutX="184.0" layoutY="354.0" prefHeight="28.0" prefWidth="103.0" text="Student ID :">
+                              <ComboBox fx:id="StudentCmb" layoutX="347.0" layoutY="382.0" prefHeight="25.0" prefWidth="255.0" />
+                              <TextField fx:id="borrowid" layoutX="347.0" layoutY="327.0" prefHeight="25.0" prefWidth="255.0" />
+                              <Label layoutX="236.0" layoutY="381.0" prefHeight="28.0" prefWidth="103.0" text="Student ID :">
                                  <font>
                                     <Font name="System Bold Italic" size="14.0" />
                                  </font>
                               </Label>
-                              <Button fx:id="DeleteLBtn" layoutX="635.0" layoutY="487.0" mnemonicParsing="false" onAction="#Borrowpage" prefHeight="58.0" prefWidth="114.0" style="-fx-background-radius: 11; -fx-background-color: #B6CAEB;" text="Delelt">
+                              <Button fx:id="DeleteLBtn" layoutX="693.0" layoutY="510.0" mnemonicParsing="false" onAction="#Borrowpage" prefHeight="58.0" prefWidth="114.0" style="-fx-background-radius: 11; -fx-background-color: #B6CAEB;" text="Delelt">
                                  <font>
                                     <Font name="System Bold" size="16.0" />
                                  </font>
                               </Button>
-                              <Button fx:id="ReturnBtn" layoutX="485.0" layoutY="487.0" mnemonicParsing="false" onAction="#Borrowpage" prefHeight="58.0" prefWidth="114.0" style="-fx-background-color: #F5D867; -fx-background-radius: 11;" text="Return">
+                              <Button fx:id="ReturnBtn" layoutX="524.0" layoutY="510.0" mnemonicParsing="false" onAction="#Borrowpage" prefHeight="58.0" prefWidth="114.0" style="-fx-background-color: #F5D867; -fx-background-radius: 11;" text="Return">
                                  <font>
                                     <Font name="System Bold" size="16.0" />
                                  </font>
                               </Button>
-                              <Button fx:id="BorrowBtn" layoutX="333.0" layoutY="487.0" mnemonicParsing="false" onAction="#Borrowpage" prefHeight="58.0" prefWidth="114.0" style="-fx-background-color: #F5B8DB; -fx-background-radius: 11;" text="Borrow">
+                              <Button fx:id="BorrowBtn" layoutX="361.0" layoutY="510.0" mnemonicParsing="false" onAction="#Borrowpage" prefHeight="58.0" prefWidth="114.0" style="-fx-background-color: #F5B8DB; -fx-background-radius: 11;" text="Borrow">
                                  <font>
                                     <Font name="System Bold" size="16.0" />
                                  </font>
                               </Button>
-                              <Label layoutX="184.0" layoutY="408.0" prefHeight="28.0" prefWidth="103.0" text="Book Code :">
+                              <Label layoutX="236.0" layoutY="435.0" prefHeight="28.0" prefWidth="103.0" text="Book Code :">
                                  <font>
                                     <Font name="System Bold Italic" size="14.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="189.0" layoutY="299.0" prefHeight="28.0" prefWidth="103.0" text="Loan ID :">
+                              <Label layoutX="236.0" layoutY="326.0" prefHeight="28.0" prefWidth="103.0" text="Loan ID :">
                                  <font>
                                     <Font name="System Bold Italic" size="14.0" />
                                  </font>
                               </Label>
-                              <ComboBox fx:id="BookCmb" layoutX="298.0" layoutY="409.0" prefHeight="25.0" prefWidth="255.0" />
-                              <Button fx:id="ClearBtn" layoutX="184.0" layoutY="487.0" mnemonicParsing="false" onAction="#Borrowpage" prefHeight="58.0" prefWidth="114.0" style="-fx-background-color: #9AAB63; -fx-background-radius: 11;" text="Clear">
+                              <ComboBox fx:id="BookCmb" layoutX="347.0" layoutY="436.0" prefHeight="25.0" prefWidth="255.0" />
+                              <Button fx:id="ClearBtn" layoutX="192.0" layoutY="510.0" mnemonicParsing="false" onAction="#Borrowpage" prefHeight="58.0" prefWidth="114.0" style="-fx-background-color: #9AAB63; -fx-background-radius: 11;" text="Clear">
                                  <font>
                                     <Font name="System Bold" size="16.0" />
                                  </font>
                               </Button>
-                              <TextField fx:id="SearchLoan" layoutX="45.0" layoutY="16.0" prefHeight="34.0" prefWidth="325.0" promptText="Search" />
-                              <ImageView fitHeight="31.0" fitWidth="35.0" layoutX="14.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                              <TextField fx:id="SearchLoan" layoutX="57.0" layoutY="16.0" prefHeight="34.0" prefWidth="316.0" promptText="Search" />
+                              <ImageView fitHeight="35.0" fitWidth="40.0" layoutX="22.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@icon/icons8-search-100.png" />
+                                    <Image url="@../icon/icons8-search-100.png" />
                                  </image>
                               </ImageView>
                            </children>

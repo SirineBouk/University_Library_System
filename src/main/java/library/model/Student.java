@@ -1,4 +1,4 @@
-package Library.Manager;
+package library.model;
 
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
@@ -40,7 +40,6 @@ public class Student {
 
     @Override
     public String toString() {
-        return ID.get(); // 👈 or whatever field you want to show
-    }
+        return ID.get(); }
 
 }

@@ -1,6 +1,6 @@
-package Library.DataBase;
+package library.database;
 
-import Library.Manager.Student;
+import library.model.Student;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
@@ -88,8 +88,6 @@ public class StudentDataBase {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-
-
     }
 
     public static void DeleteStudent(String StdID){

@@ -1,6 +1,6 @@
-package Library.DataBase;
+package library.database;
 
-import Library.Manager.Books;
+import library.model.Books;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
@@ -78,7 +78,6 @@ public class BookDataBase {
             sql.append("STOCK = ?, ");
             params.add(quantity);
         }
-
         // Remove last comma
         if (params.isEmpty()) return; // Nothing to update
         sql.setLength(sql.length() - 2); // remove trailing comma + space
